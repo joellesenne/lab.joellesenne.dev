@@ -1,0 +1,130 @@
+:root {
+	--SteelBlue: SteelBlue;
+	--DarkOrange: DarkOrange;
+	--IndianRed: IndianRed;
+	--BurlyWood: BurlyWood;
+	--DarkSlateGrey: DarkSlateGrey;
+	--DarkGrey: DarkGrey;
+	--DimGrey: DimGrey;
+	--Gainsboro: Gainsboro;
+	--GhostWhite: GhostWhite;
+	--DodgerBlue: DodgerBlue;
+	--MediumPurple: MediumPurple;
+	--OliveDrab: OliveDrab;
+	--PaleVioletRed: PaleVioletRed;
+	--DarkKhaki: DarkKhaki;
+	--Peru: Peru;
+	--CadetBlue: CadetBlue;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    vertical-align: baseline;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	background-color: var(--DimGrey);
+	color: var(--GhostWhite);
+    overflow-x: hidden;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+	text-align: center;
+}
+
+li a h2 {
+	padding: 1rem 0;
+	font-weight: 700;
+	font-size: 1.2em;
+	color: var(--GhostWhite);
+	-webkit-transition: padding .3s;
+	transition: padding .3s;
+}
+
+li a:hover h2 {
+	padding: 1.5rem 0;
+}
+
+.SteelBlue {
+	background-color: var(--SteelBlue);
+}
+
+.DarkOrange {
+	background-color: var(--DarkOrange);
+}
+
+.IndianRed {
+	background-color: var(--IndianRed);
+}
+
+.BurlyWood {
+	background-color: var(--BurlyWood);
+}
+
+.DodgerBlue {
+	background-color: var(--DodgerBlue);
+}
+
+.MediumPurple {
+	background-color: var(--MediumPurple);
+}
+
+.OliveDrab {
+	background-color: var(--OliveDrab);
+}
+
+.PaleVioletRed {
+	background-color: var(--PaleVioletRed);
+}
+
+.DarkKhaki {
+	background-color: var(--DarkKhaki);
+}
+
+.Peru {
+	background-color: var(--Peru);
+}
+
+.CadetBlue {
+	background-color: var(--CadetBlue);
+}
+
+footer {
+	padding: 1rem 0;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--DarkGrey);
+}
+
+footer a {
+	color: var(--Gainsboro);
+	-webkit-transition: color .35s;
+	transition: color .35s;
+}
+
+footer a:hover {
+	color: var(--DarkGrey);
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Background controls video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <h1 id="timer">00 : 00</h1>
+<video id="video" onEnded="endVl()">
+	<source src="https://www.fun-mooc.fr/asset-v1:groupeinsa+13001S05+session05+type@asset+block/couloir.mp4" type="video/mp4">
+		Your browser does not support the video tag
+	</video>
+<form>
+  <input id="play" type="button" onClick="playVl()" value="Play">
+  <input id="pause" type="button" onClick="pauseVl()" value="Pause">
+  <input id="reset" type="button" onClick="loadVl()" value="Retour">
+</form>
+  <script src='https://code.jquery.com/jquery-latest.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
