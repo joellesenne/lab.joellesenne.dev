@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* Variables */
+:root {
+    --first-color: #0000FF;
+    --second-color: #FF0000;
+    --third-color: #FFFF33;
+}
+
+// Mixins
+@mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+      #{$property}: $value;
+    }
+}
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content; 
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @keyframes #{$name} {
+      @content;
+    } 
+  }
+
+/* Animation */
+.marquee {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    border-bottom: 2px solid var(--third-color);
+    overflow: hidden;
+    & > p{
+        width: 100vw;
+        min-width: 100px;
+        @include prefix(transform, translateX(0), webkit);
+        @include prefix(animation, marquee 20s linear infinite, webkit);
+    }
+    &.top {
+        left: 1.1rem;
+        z-index: 4;
+    }
+    &.bottom {
+        top: auto;
+        bottom: 0;
+        border-bottom: none;
+        border-top: 2px solid var(--third-color);
+        z-index: 2;
+        & > p {
+            @include prefix(transform, translateX(-100vw), webkit);
+            @include prefix(animation-name, marquee-reverse, webkit);
+        }
+    }
+    &.left {
+        top: 100%;
+        width:100vh;
+        @include prefix(transform-origin, left top, webkit);
+        @include prefix(transform, rotate(-90deg), webkit);
+    }
+    &.right {
+        left: 100vw;
+        width: 100vh;
+        @include prefix(transform-origin, left top, webkit);
+        @include prefix(transform, rotate(90deg), webkit);
+        z-index: 3;
+    }
+}
+
+.hand, .rocket {
+    display: block;
+    margin: 5rem;
+    @include prefix(animation, opacity .3s steps(5, end) infinite, webkit);
+}
+
+.rocket {
+    @include prefix(animation-duration, .2s, webkit);
+    @include prefix(animation-direction, alternate, webkit);
+    @include prefix(animation-iteration-count, infinite, webkit);
+}
+
+@include keyframes(marquee) {
+    0% {
+        @include prefix(transform, translateX(0), webkit);
+    }
+    100% {
+        @include prefix(transform, translateX(-100vw), webkit);
+    }
+}
+
+@include keyframes(marquee-reverse) {
+    0% {
+        @include prefix(transform, translateX(-100vw), webkit);
+    }
+    100% {
+        @include prefix(transform, translateX(0), webkit);
+    }
+}
+
+@include keyframes(opacity) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Base */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+	  font: inherit;
+	  vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: var(--second-color);
+    background-color: var(--first-color);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 60vw;
+    min-height: 100vh;
+}
+
+.header h1 {
+    @include prefix(text-stroke, 3px  var(--second-color), webkit); // Non-standard
+    -webkit-text-fill-color: transparent; // Non-standard
+    font-size: 4rem;
+    text-align: center;
+}
