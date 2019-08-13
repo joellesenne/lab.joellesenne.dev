@@ -1,0 +1,48 @@
+:root {
+  --NavajoWhite: NavajoWhite;
+  --MediumBlue: MediumBlue;
+  --DarkSlateBlue: DarkSlateBlue;
+  --scrolly: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: var(--DarkSlateBlue);
+  background-color: var(--NavajoWhite);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10px;
+  width: calc(var(--scrolly)*1px);  
+  background-color: var(--MediumBlue);
+}
