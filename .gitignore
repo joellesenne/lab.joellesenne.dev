@@ -53,10 +53,12 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.local
 
 # gatsby files
 .cache/
 public
+dist
 
 # Mac files
 .DS_Store
@@ -79,4 +81,3 @@ available-soon
 .vscode
 
 # Project
-examples/
