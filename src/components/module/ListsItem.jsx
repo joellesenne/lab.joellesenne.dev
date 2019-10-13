@@ -53,7 +53,7 @@ const ListsItem = () => {
                 backgroundColor: `${item.bg}`,
               }}
             >
-              <ItemLinkStyled href={`./examples/${item.url}/`} rel="noopener noreferrer">
+              <ItemLinkStyled href={`https://lab.joellesenne.dev/examples/${item.url}/`} rel="noopener noreferrer">
                 /examples/
                 {item.url}
               </ItemLinkStyled>
