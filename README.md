@@ -1,5 +1,7 @@
 <h1 align="center">
-  Welcome to my Lab  👋
+  Welcome to my Lab 👋
+	</br>
+	<a href="https://lab.joellesenne.dev" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/1883687/66607601-e8917c00-ebb4-11e9-8310-b028686c5e79.png" width="80%"></img> </a>
 </h1>
 
 [![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](LICENSE) [![Joel Lesenne HomePage](https://img.shields.io/badge/Site-Lab%20experiment-red.svg?style=flat-square)](https//lab.joellesenne.dev)
@@ -29,12 +31,11 @@
 
 ## 🖥 Good started
 
-- 1 – Install JavaScript runtime built [nodejs](https://nodejs.org/en/)
-- 2 – Install [Gatsby CLI](https://www.gatsbyjs.org/packages/gatsby-cli/)
+1. – Install JavaScript runtime built [nodejs](https://nodejs.org/en/)
+2. – Install [Gatsby CLI](https://www.gatsbyjs.org/packages/gatsby-cli/)
 
 
-### 💻 Command bash :
-
+### 💻 Command bash
 ### Prerequisites
 
 ```bash
@@ -81,7 +82,7 @@ gatsby new <nameProject> https://github.com/joellesenne/lab.joellesenne.dev
 
 ## 🚧 Coming soon
 
-- ❌ Deploy examples files
+- ✔️ Deploy examples files
 - ✔️ Install [useDarkMode](https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/) by [css-tricks.com](css-tricks.com)
 
 ## Author
