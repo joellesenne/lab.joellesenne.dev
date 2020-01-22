@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Joël Lesenne <contact@joellesenne.dev>",
   "dependencies": {
-    "axios": "0.19.1",
+    "axios": "0.19.2",
     "gatsby": "2.18.21",
     "gatsby-image": "2.2.38",
     "gatsby-plugin-google-analytics": "2.1.32",
