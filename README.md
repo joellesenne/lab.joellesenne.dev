@@ -35,8 +35,8 @@
 1. – Install JavaScript runtime built [nodejs](https://nodejs.org/en/)
 2. – Install [Gatsby CLI](https://www.gatsbyjs.org/packages/gatsby-cli/)
 
-
 ### 💻 Command bash
+
 ### Prerequisites
 
 ```bash
