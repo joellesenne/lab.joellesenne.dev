@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import { useEffect, useState } from 'react'
 
 export const useDarkMode = () => {

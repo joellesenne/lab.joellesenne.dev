@@ -7,11 +7,11 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 First fork this project.
 
-- git clone https://github.com/joellesenne/lab.joellesenne.dev.git
+- git clone <https://github.com/joellesenne/lab.joellesenne.dev.git>
 - npm install
 - git checkout -b my-fix
 
-#### fix some code...
+## fix some code
 
 - git commit -m "added this feature"
 - git push origin my-fix
