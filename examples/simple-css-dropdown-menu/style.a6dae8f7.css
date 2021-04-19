@@ -1,0 +1,81 @@
+.wrap {
+  margin: 50px auto;
+  width: 500px;
+}
+
+.list {
+  padding: 0;
+  background: #c1c1c1;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-size: 1.125rem;
+  list-style: none;
+}
+.list li a {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: #3e3f44;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);
+  -webkit-filter: drop-shadow(color=#000, offx=1, offy=0);
+          filter: drop-shadow(color=#000, offx=1, offy=0);
+  padding: 10px;
+  padding-left: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.list li a:hover {
+  background: #4a6ba2;
+}
+.list li:nth-child(1) a {
+  border-top: none;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  list-style: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.item li a {
+  background: #d8d3a5;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #47689d;
+  text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.5);
+  -webkit-filter: drop-shadow(color=#000, offx=1, offy=0);
+          filter: drop-shadow(color=#000, offx=1, offy=0);
+}
+.item li a:hover {
+  background: #beb66a;
+}
+
+.list li:hover ul {
+  height: 125px;
+  overflow: hidden;
+}
+
+/* Custom global style */
+body {
+  width: 100%;
+  height: auto;
+  background: #e7e4c9;
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #000;
+}
+
+h1 {
+  margin: 2.5rem 0;
+  font-size: 32px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
