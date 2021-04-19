@@ -80,6 +80,5 @@ available-soon
 # VScode
 .vscode
 
-# Project
-
-# examples/
+# Jet Brains
+.idea
