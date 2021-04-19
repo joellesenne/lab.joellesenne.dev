@@ -1,0 +1,95 @@
+:root {
+  --colorBG: #2c2929;
+  --color: #f4dfc6;
+  --colorLevelBG: var(--color);
+  --colorBorderTop: #ffff66;
+  --colorBorderLeft: #0066cc;
+  --colorBorderBottom: #00d89c;
+  --colorBorderRight: #fc4532;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-box {
+  margin-top: 2rem;
+  width: 15rem;
+}
+
+.level {
+  position: relative;
+  margin: 30%;
+  margin: 0px auto;
+  width: 6em;
+  height: 6em;
+  border-radius: 10%;
+  background-color: var(--colorLevelBG);
+  overflow: hidden;
+}
+.level::after, .level::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-radius: 10%;
+  border: 3em solid transparent;
+}
+.level.easyLevel::after {
+  border-top: 3em solid transparent;
+  border-left: 3em solid transparent;
+  border-right: 3em solid transparent;
+  border-bottom: 3em solid var(--colorBorderBottom);
+}
+.level.averageLevel::after {
+  border-top: 3em solid transparent;
+  border-left: 3em solid var(--colorBorderLeft);
+  border-right: 3em solid transparent;
+  border-bottom: 3em solid var(--colorBorderBottom);
+}
+.level.difficultLevel::after {
+  border-top: 3em solid var(--colorBorderTop);
+  border-left: 3em solid var(--colorBorderLeft);
+  border-right: 3em solid transparent;
+  border-bottom: 3em solid var(--colorBorderBottom);
+}
+.level.hardLevel::after {
+  border-top: 3em solid var(--colorBorderTop);
+  border-left: 3em solid var(--colorBorderLeft);
+  border-right: 3em solid var(--colorBorderRight);
+  border-bottom: 3em solid var(--colorBorderBottom);
+}
+
+/* Custom global style */
+body {
+  background-color: var(--colorBG);
+  padding-bottom: 70px;
+  font: 1em "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.5em;
+  color: var(--color);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+main {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
