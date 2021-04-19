@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.16.0
+version: v1.19.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -40,3 +40,57 @@ patch:
         patched: '2020-06-29T21:20:55.304Z'
     - gatsby > gatsby-cli > gatsby-recipes > @mdx-js/runtime > @mdx-js/mdx > remark-mdx > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
         patched: '2020-06-29T21:20:55.304Z'
+    - gatsby > css-loader > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > devcert > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > eslint > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > eslint-plugin-flowtype > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > webpack-merge > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby-plugin-offline > cheerio > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > @typescript-eslint/parser > @typescript-eslint/typescript-estree > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > babel-eslint > @babel/traverse > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > eslint > inquirer > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > eslint > table > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > react-dev-utils > inquirer > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > @typescript-eslint/parser > @typescript-eslint/experimental-utils > @typescript-eslint/typescript-estree > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > gatsby-cli > yurnalist > inquirer > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > webpack-dev-server > portfinder > async > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - snyk > @snyk/fix > @snyk/dep-graph > graphlib > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - snyk > snyk-cpp-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - snyk > snyk-docker-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > babel-eslint > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/preset-modules > @babel/types > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - snyk > snyk-python-plugin > snyk-poetry-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
+    - gatsby > babel-preset-gatsby > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-annotate-as-pure > @babel/types > lodash:
+        patched: '2021-04-19T19:48:01.715Z'
