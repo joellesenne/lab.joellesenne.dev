@@ -1,7 +1,7 @@
 <h1 align="center">
   Welcome to my Lab 👋
 	</br>
-	<a href="https://lab.joellesenne.dev" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/1883687/66607601-e8917c00-ebb4-11e9-8310-b028686c5e79.png" width="80%"></img> </a>
+	<a href="https://lab.joellesenne.dev" target="_blank" rel="noopener noreferrer"><img src="https://github.com/joellesenne/lab.joellesenne.dev/blob/main/src/static/lab-joellesenne-version-2021.jpg?raw=true" width="80%"></img> </a>
 </h1>
 
 [![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](LICENSE) [![Joel Lesenne HomePage](https://img.shields.io/badge/Site-Lab%20experiment-red.svg?style=flat-square)](https//lab.joellesenne.dev)
