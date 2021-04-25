@@ -58,7 +58,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: 'og:image',
-          content: 'lab-joellesenne-version-2019.png',
+          content: 'lab-joellesenne-version-2021.png',
         },
         {
           property: 'og:image:alt',
@@ -78,7 +78,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:image',
-          content: 'lab-joellesenne-version-2019.png',
+          content: 'lab-joellesenne-version-2021.png',
         },
         {
           name: 'twitter:image:alt',
