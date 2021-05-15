@@ -17,7 +17,7 @@
   "author": "Joël Lesenne <contact@joellesenne.dev>",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -o",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
@@ -42,7 +42,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-helmet": "6.1.0",
-    "snyk": "1.590.0",
+    "snyk": "1.595.0",
     "styled-components": "5.3.0"
   },
   "devDependencies": {
@@ -50,7 +50,7 @@
     "eslint": "7.26.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-import": "2.23.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-react": "7.22.0",
