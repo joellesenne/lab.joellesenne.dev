@@ -38,9 +38,9 @@
 
 ## Prerequisites
 
-- npm >=6.14.10
-- node >=14.15.4
-- gatsby-cli >=2.12.69
+- npm >=7.13.0
+- node >=16.0.0
+- gatsby >=3.5.0
 
 ## Install
 
@@ -49,9 +49,9 @@
 npm install -g gatsby-cli
 
 # Clone this repository
-~ $ git clone  https://github.com/joellesenne/lab.joellesenne.dev.git
+git clone  https://github.com/joellesenne/lab.joellesenne.dev.git
 
-~ $ cd lab.joellesenne.dev
+cd lab.joellesenne.dev
 
 npm install
 
