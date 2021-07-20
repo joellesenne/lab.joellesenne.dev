@@ -5,7 +5,7 @@ import axios from 'axios'
 import { ArticleStyled } from '../styled/ArticleStyled'
 import { ItemLinkStyled } from '../styled/LinkStyled'
 
-const Item = styled.li`
+const ItemStyled = styled.li`
   border-bottom: 3px solid ${({ theme }) => theme.border};
 `
 
@@ -15,19 +15,20 @@ const ListsItem = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    const fetchData = async () => {
+  	const url = 'https://api.joellesenne.dev/lab.json'
+    const request = async () => {
       setLoading(true)
 
       try {
-        const result = await axios('https://api.joellesenne.dev/lab.json')
-        setData(result.data)
+        const req = await axios(url)
+        setData(req.data)
       } catch (error) {
         setError(true)
       }
 
       setLoading(false)
     }
-    fetchData()
+    request()
   }, [])
 
   return (
@@ -44,7 +45,7 @@ const ListsItem = () => {
       ) : (
         <ul>
           {data.map(item => (
-            <Item
+            <ItemStyled
               className="listsItem"
               key={item.id}
               style={{
@@ -55,7 +56,7 @@ const ListsItem = () => {
                 /examples/
                 {item.url}
               </ItemLinkStyled>
-            </Item>
+            </ItemStyled>
           ))}
         </ul>
       )}

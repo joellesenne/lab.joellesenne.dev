@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../hook/userToggleMode'
+import { useDarkMode } from '../hooks/userToggleMode'
 import { lightTheme, darkTheme } from '../theme/toggleTheme'
 import { GlobalStyles } from '../theme/globalStyle'
 

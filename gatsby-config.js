@@ -1,9 +1,24 @@
+const path = require('path')
+
+const config = require('./config/site')
+
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+
+require('dotenv').config({
+	path: `.env`,
+})
+
 module.exports = {
-  siteMetadata: {
-    title: 'Joël Lesenne',
-    description: 'Various coding experiments and demos',
-    author: 'Joël Lesenne',
-  },
+	pathPrefix: config.pathPrefix,
+  	siteMetadata: {
+		title: config.siteTitle,
+		description: config.siteDescription,
+		author: config.siteAuthor,
+	  	url: config.siteUrl + pathPrefix,
+		image: config.siteImage,
+		alt: config.siteImageAlt,
+		lang: config.siteLang
+  	},
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -13,28 +28,30 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-28372011-2',
-      },
+		options: {
+			trackingId: process.env.GA_TRACKING_ID,
+			// Puts tracking script in the head instead of the body
+			head: false,
+			// Setting this parameter is optional
+			anonymize: true,
+			// Setting this parameter is also optional
+			respectDNT: true,
+		},
     },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Lab | Joël Lesenne',
-        short_name: 'Various coding experiments and demos',
-        start_url: '/',
-        background_color: '#0000FF',
-        theme_color: '#FFFFFF',
+      	name: config.siteTitle,
+        short_name: config.siteDescription,
+        start_url: config.pathPrefix,
+		background_color: config.backgroundColor,
+		theme_color: config.themeColor,
         display: 'fullscreen',
         icon: 'src/images/logo.png', // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     'gatsby-plugin-offline',
   ],
 }

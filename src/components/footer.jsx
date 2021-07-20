@@ -3,18 +3,18 @@ import styled from 'styled-components'
 
 import { ExternalLinkStyled } from './styled/LinkStyled'
 
-const Footer = styled.footer`
+const FooterStyled = styled.footer`
   padding: 1rem 1rem 1.45rem;
 `
 
-const Index = () => (
-  <Footer>
+const Footer = () => (
+  <FooterStyled>
     <h1>
       <ExternalLinkStyled href="https://joellesenne.dev" target="_blank" rel="noopener noreferrer">
         /joellesenne.dev/
       </ExternalLinkStyled>
     </h1>
-  </Footer>
+  </FooterStyled>
 )
 
-export default Index
+export default Footer

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../hook/userToggleMode'
+import { useDarkMode } from '../hooks/userToggleMode'
 import { lightTheme, darkTheme } from '../theme/toggleTheme'
 import { GlobalStyles } from '../theme/globalStyle'
 
@@ -9,7 +9,7 @@ import ListsItem from '../components/module/ListsItem'
 import Toggle from '../components/module/Toggle'
 import SEO from '../components/seo'
 
-const Index = () => {
+const IndexPage = () => {
   const [theme, toggleTheme] = useDarkMode()
   const themeMode = theme === 'light' ? lightTheme : darkTheme
 
@@ -25,4 +25,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default IndexPage
