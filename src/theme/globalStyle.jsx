@@ -23,7 +23,6 @@ export const GlobalStyles = createGlobalStyle`
 		word-wrap: break-word;
 		font-kerning: normal;
 		-moz-font-feature-settings: "kern", "liga", "clig", "calt";
-		-ms-font-feature-settings: "kern", "liga", "clig", "calt";
 		-webkit-font-feature-settings: "kern", "liga", "clig", "calt";
 		font-feature-settings: "kern", "liga", "clig", "calt";
 		-webkit-font-smoothing: antialiased;
@@ -39,7 +38,7 @@ export const GlobalStyles = createGlobalStyle`
 		font-size: 2.25rem;
 		line-height: 1.1;
 		font-weight: bold;
-  	text-rendering: optimizeLegibility;
+  		text-rendering: optimizeLegibility;
 	}
 	h1:hover {
 		animation: spacing 4s ease-in-out forwards;
@@ -56,7 +55,7 @@ export const GlobalStyles = createGlobalStyle`
 		position: relative;
 		color: ${({ theme }) => theme.text};
 		text-decoration: none;
-  	-webkit-text-decoration-skip: objects;
+  		-webkit-text-decoration-skip: objects;
 	}
 	a:hover {
 		color: ${({ theme }) => theme.body};
