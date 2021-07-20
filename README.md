@@ -1,7 +1,7 @@
 <h1 align="center">
   Welcome to my Lab 👋
 	</br>
-	<a href="https://lab.joellesenne.dev" target="_blank" rel="noopener noreferrer"><img src="https://github.com/joellesenne/lab.joellesenne.dev/blob/main/src/static/lab-joellesenne-version-2021.jpg?raw=true" width="80%"></a>
+	<a href="https://lab.joellesenne.dev" target="_blank" rel="noopener noreferrer"><img src="https://github.com/joellesenne/lab.joellesenne.dev/blob/main/src/static/banner.jpg?raw=true" width="80%"></a>
 </h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
