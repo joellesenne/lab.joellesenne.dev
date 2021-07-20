@@ -1,117 +1,96 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import useSiteMetadata from "../hooks/use-site-metadata"
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  )
+function SEO({meta}) {
+	const {title, description, author, url, image, alt, lang} = useSiteMetadata()
 
-  const metaDescription = description || site.siteMetadata.description
-
-  return (
-    <Helmet
-      defer={false}
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: 'description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          property: 'og:url',
-          content: 'https://lab.joellesenne.dev',
-        },
-        {
-          property: 'og:image',
-          content: 'lab-joellesenne-version-2021.png',
-        },
-        {
-          property: 'og:image:alt',
-          content: 'Lab webSite image',
-        },
-        {
-          property: 'og:locale',
-          content: 'en_US',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-        {
-          name: 'twitter:url',
-          content: 'https://lab.joellesenne.dev',
-        },
-        {
-          name: 'twitter:image',
-          content: 'lab-joellesenne-version-2021.png',
-        },
-        {
-          name: 'twitter:image:alt',
-          content: 'Lab webSite image',
-        },
-        {
-          name: 'twitter:creator',
-          content: site.siteMetadata.author,
-        },
-        {
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
-  )
+	return (
+		<Helmet
+			defer={false}
+			htmlAttributes={{
+				lang,
+			}}
+			title={title}
+			titleTemplate={`%s | ${author}`}
+			meta={[
+				{
+					name: 'description',
+					content: description,
+				},
+				{
+					property: 'og:title',
+					content: title,
+				},
+				{
+					property: 'og:description',
+					content: description,
+				},
+				{
+					property: 'og:type',
+					content: 'website',
+				},
+				{
+					property: 'og:url',
+					content: url,
+				},
+				{
+					property: 'og:image',
+					content: image,
+				},
+				{
+					property: 'og:image:alt',
+					content: alt,
+				},
+				{
+					property: 'og:locale',
+					content: lang,
+				},
+				{
+					name: 'twitter:card',
+					content: 'summary',
+				},
+				{
+					name: 'twitter:url',
+					content: url,
+				},
+				{
+					name: 'twitter:image',
+					content: image,
+				},
+				{
+					name: 'twitter:image:alt',
+					content: alt,
+				},
+				{
+					name: 'twitter:creator',
+					content: author,
+				},
+				{
+					name: 'twitter:title',
+					content: title,
+				},
+				{
+					name: 'twitter:description',
+					content: description,
+				},
+			].concat(meta)}
+		/>
+	)
 }
 
 SEO.defaultProps = {
-  lang: 'en',
-  meta: [],
-  description: '',
+	lang: 'en',
+	meta: [],
+	description: '',
 }
 
 SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+	description: PropTypes.string,
+	lang: PropTypes.string,
+	meta: PropTypes.arrayOf(PropTypes.object),
+	title: PropTypes.string.isRequired,
 }
 
 export default SEO
