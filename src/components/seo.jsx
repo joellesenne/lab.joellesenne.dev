@@ -5,7 +5,6 @@ import useSiteMetadata from "../hooks/use-site-metadata"
 
 function SEO({meta}) {
 	const {title, description, author, url, image, alt, lang} = useSiteMetadata()
-
 	return (
 		<Helmet
 			defer={false}

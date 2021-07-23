@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import axios from 'axios'
 
+//process.env['API_URL'] = 'http://blabla.com:3000';
+console.log(process.env.API_URL);
+
 import { ArticleStyled } from '../styled/ArticleStyled'
 import { ItemLinkStyled } from '../styled/LinkStyled'
 
@@ -15,12 +18,11 @@ const ListsItem = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-  	const url = 'https://api.joellesenne.dev/lab.json'
     const request = async () => {
       setLoading(true)
 
       try {
-        const req = await axios(url)
+        const req = await axios(process.env.API_URL)
         setData(req.data)
       } catch (error) {
         setError(true)

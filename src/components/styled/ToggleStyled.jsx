@@ -5,9 +5,9 @@ export const ButtonToggleStyled = styled.button`
   right: 1.45rem;
   bottom: 1.45rem;
   padding: 0.8rem;
-  color: #fff;
+  color: ${({ theme }) => theme.body};
   font-size: 1.5rem;
-  background-color: #363537;
+  background-color: ${({ theme }) => theme.text};
   border-radius: 5px;
   outline-style: none;
   box-shadow: inset 0 0 2px 1px ${({ theme }) => theme.text};

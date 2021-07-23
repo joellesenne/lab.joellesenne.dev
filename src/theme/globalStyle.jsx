@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
+import theme from '../../config/theme';
 
 export const GlobalStyles = createGlobalStyle`
+	@media (prefers-reduced-motion: reduce) {
+		* {
+			animation: none;
+		}
+	}
 	*,
 	*::after,
 	*::before {
@@ -55,7 +61,7 @@ export const GlobalStyles = createGlobalStyle`
 		position: relative;
 		color: ${({ theme }) => theme.text};
 		text-decoration: none;
-  		-webkit-text-decoration-skip: objects;
+  		text-decoration-skip: objects;
 	}
 	a:hover {
 		color: ${({ theme }) => theme.body};
@@ -65,8 +71,6 @@ export const GlobalStyles = createGlobalStyle`
 	}
 	ul {
 		list-style: none;
-		list-style-position: outside;
-		list-style-image: none;
 	}
 	li {
 		color: inherit;
@@ -89,17 +93,19 @@ export const GlobalStyles = createGlobalStyle`
 	.listsItem a:hover {
 		background-color: transparent;
 	}
-	::-moz-selection{ background: #0000FF; color:#00FFCE; text-shadow: none; }
-	::selection { background:#0000ff; color:#00FFCE; text-shadow: none; }
+	::selection {
+		background: ${({ theme }) => theme.body};
+		color: ${({ theme }) => theme.text};
+		text-shadow: none; }
 	@keyframes spacing {
 		0% {
-			letter-spacing: 0rem;
+			letter-spacing: 0;
 		}
 		50% {
 			letter-spacing: 0.6rem;
 		}
 		100% {
-			letter-spacing: 0rem;
+			letter-spacing: 0;
 		}
 	}
 `
