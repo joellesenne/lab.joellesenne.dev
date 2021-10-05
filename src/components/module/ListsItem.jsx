@@ -54,9 +54,9 @@ const ListsItem = () => {
                 backgroundColor: `${item.bg}`,
               }}
             >
-              <ItemLinkStyled href={`https://lab.joellesenne.dev/examples/${item.url}/`} rel="noopener noreferrer">
-                /examples/
-                {item.url}
+              <ItemLinkStyled href={`https://codepen.io/joellesenne/full/${item.url}/`} target="_blank" rel="noopener noreferrer">
+                /
+                {item.name}
               </ItemLinkStyled>
             </ItemStyled>
           ))}
