@@ -26,7 +26,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet: 6.1.0
-  snyk: 1.844.0
+  snyk: 1.845.0
   styled-components: 5.3.3
 
 dependencies:
@@ -42,7 +42,7 @@ dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-helmet: 6.1.0_react@17.0.2
-  snyk: 1.844.0
+  snyk: 1.845.0
   styled-components: 5.3.3_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
@@ -9971,8 +9971,8 @@ packages:
       use: 3.1.1
     dev: false
 
-  /snyk/1.844.0:
-    resolution: {integrity: sha512-FEaitzYefNqbwlQnESbINc4Fb9dRDQ8PaAhz3GQNT9qUpeHpBDRHgVQKDq1YdwAjJpiBQMuRtHdPN+DDMMXuuQ==}
+  /snyk/1.845.0:
+    resolution: {integrity: sha512-ZQb8/lDIo8mENuaYgqrDeBTJugTK/OJPoadmh/ivHYdxOUSwEF8PA7gRDB4fs2b55bdVyk/QONZmDQcMmAuT7w==}
     engines: {node: '>=10'}
     hasBin: true
     dev: false
