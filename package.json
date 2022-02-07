@@ -47,8 +47,8 @@
 		"styled-components": "5.3.3"
 	},
 	"devDependencies": {
-		"@babel/core": "7.16.12",
-		"@babel/eslint-parser": "7.16.5",
+		"@babel/core": "7.17.0",
+		"@babel/eslint-parser": "7.17.0",
 		"dotenv": "15.0.1",
 		"eslint": "8.8.0",
 		"eslint-config-airbnb": "19.0.4",
