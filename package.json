@@ -30,7 +30,7 @@
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
 	},
 	"dependencies": {
-		"axios": "0.25.0",
+		"axios": "0.26.1",
 		"gatsby": "4.6.2",
 		"gatsby-image": "3.11.0",
 		"gatsby-plugin-google-analytics": "4.6.0",
