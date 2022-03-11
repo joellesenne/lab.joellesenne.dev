@@ -1,13 +1,14 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../hooks/userToggleMode'
-import { lightTheme, darkTheme } from '../theme/toggleTheme'
-import { GlobalStyles } from '../theme/globalStyle'
+import {ThemeProvider} from 'styled-components'
+import {useDarkMode} from '../hooks/userToggleMode'
+import {lightTheme, darkTheme} from '../theme/toggleTheme'
+import {GlobalStyles} from '../theme/globalStyle'
 
 import Layout from '../components/layout'
-import { ArticleStyled } from '../components/styled/ArticleStyled'
-import { TitleStyled, ParagraphStyled } from '../components/styled/Typography.Styled'
-import { InternalLinkStyled } from '../components/styled/LinkStyled'
+import {ArticleStyled} from '../components/styled/ArticleStyled'
+import {TitleStyled, ParagraphStyled} from '../components/styled/Typography.Styled'
+import {InternalLinkStyled} from '../components/styled/LinkStyled'
+import {Not_found} from '../data'
 import Toggle from '../components/module/Toggle'
 
 import SEO from '../components/seo'
@@ -20,12 +21,12 @@ const NotFoundPage = () => {
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
       <Layout>
-        <SEO title="404: Not found" />
+        <SEO title={Not_found.title} />
         <ArticleStyled>
-          <TitleStyled>NOT FOUND</TitleStyled>
-          <ParagraphStyled>You just hit a route that doesn't exist... the sadness.</ParagraphStyled>
+          <TitleStyled>{Not_found.title}</TitleStyled>
+          <ParagraphStyled>{Not_found.subtitle}</ParagraphStyled>
           <TitleStyled>
-            <InternalLinkStyled to="/">Return</InternalLinkStyled>
+            <InternalLinkStyled to={Not_found.url}>{Not_found.link}</InternalLinkStyled>
           </TitleStyled>
         </ArticleStyled>
       </Layout>

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import {Link} from 'gatsby'
 
 export const LinkStyled = styled.li`
   border-bottom: 3px solid ${({ theme }) => theme.border};

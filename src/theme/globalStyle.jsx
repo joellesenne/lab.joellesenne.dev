@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import {createGlobalStyle} from 'styled-components'
 import theme from '../../config/theme';
 
 export const GlobalStyles = createGlobalStyle`
@@ -64,7 +64,7 @@ export const GlobalStyles = createGlobalStyle`
   		text-decoration-skip: objects;
 	}
 	a:hover {
-		color: ${({ theme }) => theme.body};
+		color: ${({ theme }) => theme.text};
 		outline-width: 0;
 		background-color: transparent;
 		animation: spacing 4s ease-in-out forwards;

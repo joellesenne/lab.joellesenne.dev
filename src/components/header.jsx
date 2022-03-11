@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { LinkHoverStyled } from './styled/LinkStyled'
+import {LinkHoverStyled} from './styled/LinkStyled'
+import {header} from '../data'
 
 const HeaderStyled = styled.header`
   padding: 1.45rem 1rem 1rem;
@@ -11,7 +12,7 @@ const HeaderStyled = styled.header`
 const Header = () => (
   <HeaderStyled>
     <h1>
-      <LinkHoverStyled to="/">/lab/</LinkHoverStyled>
+      <LinkHoverStyled to={header.url}>/{header.title}/</LinkHoverStyled>
     </h1>
   </HeaderStyled>
 )

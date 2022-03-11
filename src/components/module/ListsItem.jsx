@@ -5,8 +5,8 @@ import axios from 'axios'
 //process.env['API_URL'] = 'http://blabla.com:3000';
 console.log(process.env.API_URL);
 
-import { ArticleStyled } from '../styled/ArticleStyled'
-import { ItemLinkStyled } from '../styled/LinkStyled'
+import {ArticleStyled} from '../styled/ArticleStyled'
+import {ItemLinkStyled} from '../styled/LinkStyled'
 
 const ItemStyled = styled.li`
   border-bottom: 3px solid ${({ theme }) => theme.border};
@@ -50,13 +50,9 @@ const ListsItem = () => {
             <ItemStyled
               className="listsItem"
               key={item.id}
-              style={{
-                backgroundColor: `${item.bg}`,
-              }}
             >
               <ItemLinkStyled href={`https://codepen.io/joellesenne/full/${item.url}/`} target="_blank" rel="noopener noreferrer">
-                /
-                {item.name}
+                /{item.name}/
               </ItemLinkStyled>
             </ItemStyled>
           ))}
