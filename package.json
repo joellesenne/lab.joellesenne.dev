@@ -23,13 +23,14 @@
 		"format": "prettier --write \"**/*.{js,jsx,json,md}\"",
 		"lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
 		"lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-		"prepare": "yarn run snyk-protect",
 		"serve": "gatsby serve",
-		"snyk-protect": "snyk protect",
+	  	"snyk-prepare": "npm run snyk-protect",
+		"snyk-protect": "snyk-protect",
 		"start": "npm run develop",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
 	},
 	"dependencies": {
+		"@snyk/protect": "1.869.0",
 		"axios": "0.26.1",
 		"gatsby": "4.9.3",
 		"gatsby-image": "3.11.0",
@@ -43,7 +44,6 @@
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
 		"react-helmet": "6.1.0",
-		"snyk": "1.868.0",
 		"styled-components": "5.3.3"
 	},
 	"devDependencies": {
@@ -65,5 +65,15 @@
 		"node": ">=16.0.0",
 		"npm": ">=7.13.0"
 	},
-	"snyk": true
+	"snyk": true,
+	"pnpm": {
+		"overrides": {
+			"ansi-html@<0.0.8": ">=0.0.8",
+			"node-fetch@<2.6.7": ">=2.6.7",
+			"ansi-regex@>2.1.1 <5.0.1": ">=5.0.1",
+			"immer@<9.0.6": ">=9.0.6",
+			"ws@>=7.0.0 <7.4.6": ">=7.4.6",
+			"browserslist@>=4.0.0 <4.16.5": ">=4.16.5"
+		}
+	}
 }
