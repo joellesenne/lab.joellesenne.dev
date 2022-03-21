@@ -29,6 +29,12 @@
 		"start": "npm run develop",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
 	},
+	"eslintConfig": {
+		"env": {
+			"browser": true,
+			"node": true
+		}
+	},
 	"dependencies": {
 		"@snyk/protect": "1.869.0",
 		"axios": "0.26.1",
