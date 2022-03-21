@@ -11,7 +11,7 @@ overrides:
 specifiers:
   '@babel/core': 7.17.5
   '@babel/eslint-parser': 7.17.0
-  '@snyk/protect': 1.869.0
+  '@snyk/protect': 1.880.0
   axios: 0.26.1
   dotenv: 16.0.0
   eslint: 8.11.0
@@ -39,7 +39,7 @@ specifiers:
   styled-components: 5.3.3
 
 dependencies:
-  '@snyk/protect': 1.869.0
+  '@snyk/protect': 1.880.0
   axios: 0.26.1
   gatsby: 4.9.3_react-dom@17.0.2+react@17.0.2
   gatsby-image: 3.11.0
@@ -2375,8 +2375,8 @@ packages:
       lodash.deburr: 4.1.0
     dev: false
 
-  /@snyk/protect/1.869.0:
-    resolution: {integrity: sha512-7peqZaIqEV5OIWAg41dwhlttxwR4qvSeQgZRLYzJjWV0TDdWd7qzDnFb09EZ57JSVhx5uSXZv79Af7OisjZRAg==}
+  /@snyk/protect/1.880.0:
+    resolution: {integrity: sha512-kBUEIDR9+UNNXYNI43S0zIkCNtQaJONM2vHEzYCooXZWwufy76FBlkVMy3DmecfdGS5c/kZbjXr4+0TueD4g5A==}
     engines: {node: '>=10'}
     hasBin: true
     dev: false
