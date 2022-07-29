@@ -19,7 +19,7 @@ specifiers:
   eslint-config-prettier: 8.5.0
   eslint-plugin-import: 2.26.0
   eslint-plugin-jsx-a11y: 6.6.1
-  eslint-plugin-prettier: 4.0.0
+  eslint-plugin-prettier: 4.2.1
   eslint-plugin-react: 7.29.4
   eslint-plugin-react-hooks: 4.6.0
   gatsby: 4.19.2
@@ -66,7 +66,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.20.0
   eslint-plugin-import: 2.26.0_eslint@8.20.0
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.20.0
-  eslint-plugin-prettier: 4.0.0_370b9998364e21a2d582909b8d493e2e
+  eslint-plugin-prettier: 4.2.1_370b9998364e21a2d582909b8d493e2e
   eslint-plugin-react: 7.29.4_eslint@8.20.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.20.0
   gatsby-plugin-root-import: 2.0.8_gatsby@4.19.2
@@ -5262,9 +5262,9 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/4.0.0_370b9998364e21a2d582909b8d493e2e:
-    resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
-    engines: {node: '>=6.0.0'}
+  /eslint-plugin-prettier/4.2.1_370b9998364e21a2d582909b8d493e2e:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
       eslint: '>=7.28.0'
       eslint-config-prettier: '*'
