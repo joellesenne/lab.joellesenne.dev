@@ -20,6 +20,7 @@
 		"build": "gatsby build",
 		"develop": "gatsby develop -o",
 		"clean": "rm -rf .cache & rm -rf public",
+		"rm": "rm -rf node_modules ",
 		"format": "prettier --write \"**/*.{js,jsx,json,md}\"",
 		"lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
 		"lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
