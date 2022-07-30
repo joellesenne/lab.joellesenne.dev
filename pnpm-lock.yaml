@@ -20,7 +20,7 @@ specifiers:
   eslint-plugin-import: 2.26.0
   eslint-plugin-jsx-a11y: 6.6.1
   eslint-plugin-prettier: 4.2.1
-  eslint-plugin-react: 7.29.4
+  eslint-plugin-react: 7.30.1
   eslint-plugin-react-hooks: 4.6.0
   gatsby: 4.19.2
   gatsby-image: 3.11.0
@@ -62,12 +62,12 @@ devDependencies:
   '@babel/eslint-parser': 7.18.9_@babel+core@7.18.9+eslint@8.20.0
   dotenv: 16.0.1
   eslint: 8.20.0
-  eslint-config-airbnb: 19.0.4_7f6adde52dec0dca975b8488a3df8885
+  eslint-config-airbnb: 19.0.4_74f8d9be39cb27136c767247a6055351
   eslint-config-prettier: 8.5.0_eslint@8.20.0
   eslint-plugin-import: 2.26.0_eslint@8.20.0
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.20.0
   eslint-plugin-prettier: 4.2.1_370b9998364e21a2d582909b8d493e2e
-  eslint-plugin-react: 7.29.4_eslint@8.20.0
+  eslint-plugin-react: 7.30.1_eslint@8.20.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.20.0
   gatsby-plugin-root-import: 2.0.8_gatsby@4.19.2
   prettier: 2.7.1
@@ -3395,15 +3395,6 @@ packages:
       define-properties: 1.1.4
       es-abstract: 1.20.1
 
-  /array.prototype.flatmap/1.2.5:
-    resolution: {integrity: sha512-08u6rVyi1Lj7oqWbS9nUxliETrtIROT4XGTA4D/LWGten6E3ocm7cy9SIrmNHOL5XVbVuckUp3X6Xyg8/zpvHA==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.20.1
-    dev: true
-
   /array.prototype.flatmap/1.3.0:
     resolution: {integrity: sha512-PZC9/8TKAIxcWKdyeb77EzULHPrIX/tIZebLJUQOMR1OwYosT8yggdfWScfTBCDj5utONvOuPQQumYsU2ULbkg==}
     engines: {node: '>= 0.4'}
@@ -5010,7 +5001,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-config-airbnb/19.0.4_7f6adde52dec0dca975b8488a3df8885:
+  /eslint-config-airbnb/19.0.4_74f8d9be39cb27136c767247a6055351:
     resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
     engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -5024,7 +5015,7 @@ packages:
       eslint-config-airbnb-base: 15.0.0_0157baa8edf6c20407205f3a831c9174
       eslint-plugin-import: 2.26.0_eslint@8.20.0
       eslint-plugin-jsx-a11y: 6.6.1_eslint@8.20.0
-      eslint-plugin-react: 7.29.4_eslint@8.20.0
+      eslint-plugin-react: 7.30.1_eslint@8.20.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.20.0
       object.assign: 4.1.2
       object.entries: 1.1.5
@@ -5296,29 +5287,6 @@ packages:
       eslint: 8.20.0
     dev: true
 
-  /eslint-plugin-react/7.29.4_eslint@8.20.0:
-    resolution: {integrity: sha512-CVCXajliVh509PcZYRFyu/BoUEz452+jtQJq2b3Bae4v3xBUWPLCmtmBM+ZinG4MzwmxJgJ2M5rMqhqLVn7MtQ==}
-    engines: {node: '>=4'}
-    peerDependencies:
-      eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
-    dependencies:
-      array-includes: 3.1.4
-      array.prototype.flatmap: 1.2.5
-      doctrine: 2.1.0
-      eslint: 8.20.0
-      estraverse: 5.3.0
-      jsx-ast-utils: 3.2.1
-      minimatch: 3.1.2
-      object.entries: 1.1.5
-      object.fromentries: 2.0.5
-      object.hasown: 1.1.0
-      object.values: 1.1.5
-      prop-types: 15.8.1
-      resolve: 2.0.0-next.3
-      semver: 6.3.0
-      string.prototype.matchall: 4.0.6
-    dev: true
-
   /eslint-plugin-react/7.30.1_eslint@7.32.0:
     resolution: {integrity: sha512-NbEvI9jtqO46yJA3wcRF9Mo0lF9T/jhdHqhCHXiXtD+Zcb98812wvokjWpU7Q4QH5edo6dmqrukxVvWWXHlsUg==}
     engines: {node: '>=4'}
@@ -5340,6 +5308,29 @@ packages:
       resolve: 2.0.0-next.3
       semver: 6.3.0
       string.prototype.matchall: 4.0.7
+
+  /eslint-plugin-react/7.30.1_eslint@8.20.0:
+    resolution: {integrity: sha512-NbEvI9jtqO46yJA3wcRF9Mo0lF9T/jhdHqhCHXiXtD+Zcb98812wvokjWpU7Q4QH5edo6dmqrukxVvWWXHlsUg==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
+    dependencies:
+      array-includes: 3.1.5
+      array.prototype.flatmap: 1.3.0
+      doctrine: 2.1.0
+      eslint: 8.20.0
+      estraverse: 5.3.0
+      jsx-ast-utils: 3.3.2
+      minimatch: 3.1.2
+      object.entries: 1.1.5
+      object.fromentries: 2.0.5
+      object.hasown: 1.1.1
+      object.values: 1.1.5
+      prop-types: 15.8.1
+      resolve: 2.0.0-next.3
+      semver: 6.3.0
+      string.prototype.matchall: 4.0.7
+    dev: true
 
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
@@ -7532,14 +7523,6 @@ packages:
     optionalDependencies:
       graceful-fs: 4.2.9
 
-  /jsx-ast-utils/3.2.1:
-    resolution: {integrity: sha512-uP5vu8xfy2F9A6LGC22KO7e2/vGTS1MhP+18f++ZNlf0Ohaxbc9nIEwHAsejlJKyzfZzU5UIhe5ItYkitcZnZA==}
-    engines: {node: '>=4.0'}
-    dependencies:
-      array-includes: 3.1.5
-      object.assign: 4.1.2
-    dev: true
-
   /jsx-ast-utils/3.3.2:
     resolution: {integrity: sha512-4ZCADZHRkno244xlNnn4AOG6sRQ7iBZ5BbgZ4vW4y5IZw7cVUD1PPeblm1xx/nfmMxPdt/LHsXZW8z/j58+l9Q==}
     engines: {node: '>=4.0'}
@@ -8259,13 +8242,6 @@ packages:
       call-bind: 1.0.2
       define-properties: 1.1.4
       es-abstract: 1.20.1
-
-  /object.hasown/1.1.0:
-    resolution: {integrity: sha512-MhjYRfj3GBlhSkDHo6QmvgjRLXQ2zndabdf3nX0yTyZK9rPfxb6uRpAac8HXNLy1GpqWtZ81Qh4v3uOls2sRAg==}
-    dependencies:
-      define-properties: 1.1.4
-      es-abstract: 1.20.1
-    dev: true
 
   /object.hasown/1.1.1:
     resolution: {integrity: sha512-LYLe4tivNQzq4JdaWW6WO3HMZZJWzkkH8fnI6EebWl0VZth2wL2Lovm74ep2/gZzlaTdV62JZHEqHQ2yVn8Q/A==}
@@ -9888,19 +9864,6 @@ packages:
       emoji-regex: 8.0.0
       is-fullwidth-code-point: 3.0.0
       strip-ansi: 6.0.1
-
-  /string.prototype.matchall/4.0.6:
-    resolution: {integrity: sha512-6WgDX8HmQqvEd7J+G6VtAahhsQIssiZ8zl7zKh1VDMFyL3hRTJP4FTNA3RbIp2TOQ9AYNDcc7e3fH0Qbup+DBg==}
-    dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.20.1
-      get-intrinsic: 1.1.1
-      has-symbols: 1.0.3
-      internal-slot: 1.0.3
-      regexp.prototype.flags: 1.4.3
-      side-channel: 1.0.4
-    dev: true
 
   /string.prototype.matchall/4.0.7:
     resolution: {integrity: sha512-f48okCX7JiwVi1NXCVWcFnZgADDC/n2vePlQ/KUCNqCikLLilQvwjMO8+BHVKvgzH0JB0J9LEPgxOGT02RoETg==}
