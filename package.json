@@ -18,15 +18,16 @@
 	"author": "Joël Lesenne <contact@joellesenne.dev>",
 	"scripts": {
 		"build": "gatsby build",
-		"develop": "gatsby develop -o",
 		"clean": "rm -rf .cache & rm -rf public",
-		"rm": "rm -rf node_modules ",
+		"develop": "gatsby develop -o",
 		"format": "prettier --write \"**/*.{js,jsx,json,md}\"",
 		"lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
 		"lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
+		"rm": "rm -rf node_modules ",
 		"serve": "gatsby serve",
 		"snyk-prepare": "npm run snyk-protect",
 		"snyk-protect": "snyk-protect",
+		"sort-package-json": "npx sort-package-json",
 		"start": "npm run develop",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
 	},
@@ -73,7 +74,6 @@
 		"node": ">=16.0.0",
 		"npm": ">=7.13.0"
 	},
-	"snyk": true,
 	"pnpm": {
 		"overrides": {
 			"ansi-html@<0.0.8": ">=0.0.8",
@@ -83,5 +83,6 @@
 			"ws@>=7.0.0 <7.4.6": ">=7.4.6",
 			"browserslist@>=4.0.0 <4.16.5": ">=4.16.5"
 		}
-	}
+	},
+	"snyk": true
 }
